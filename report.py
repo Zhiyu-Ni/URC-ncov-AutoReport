@@ -40,7 +40,7 @@ class Report(object):
                 'password': str(self.password),
                 'warn': '',
                 'CAS_LT': CAS_LT,
-                'LT': vcode,
+                'LT': '',
                 'button': '',
             }
             r = session.post(url, data=data)
