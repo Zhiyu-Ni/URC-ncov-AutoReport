@@ -107,7 +107,7 @@ class Report(object):
         response = session.get("https://passport.ustc.edu.cn/validatecode.jsp?type=login")
         image = response.content
 
-        request_url = "https://aip.baidubce.com/rest/2.0/ocr/v1/numbers"
+        request_url = "https://aip.baidubce.com/rest/2.0/ocr/v1/formula"
         # 二进制方式打开图片文件
         # f = open('img.png', 'rb')
         img = base64.b64encode(image)
